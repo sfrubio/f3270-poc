@@ -18,5 +18,10 @@ public class LoginPage {
         terminal.write(password, "music");
         terminal.enter();
         terminal.enter();
+        if (terminal.getLine(3).contains("Conditions of Use")) {
+            terminal.enter();
+            terminal.write("yes");
+            terminal.enter();
+        }
     }
 }
