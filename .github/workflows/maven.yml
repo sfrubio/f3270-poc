@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hoste
+    runs-on: self-hosted
     steps:
     - name: Run mvn test
       run: mvn clean test
