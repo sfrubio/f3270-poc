@@ -1,0 +1,14 @@
+name: F3270 POC Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: self-hoste
+    steps:
+    - name: Run mvn test
+      run: mvn clean test
