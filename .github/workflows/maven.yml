@@ -10,5 +10,7 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
     - name: Run mvn test
       run: mvn clean test
